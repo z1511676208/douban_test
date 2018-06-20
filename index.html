@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=referrer content=default><title>yikanyigou</title><link href=/static/css/app.b824d5d5ce4cb96726a13e33608d3274.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.1fff85ba40f2e5fe655e.js></script><script type=text/javascript src=/static/js/app.6c6199d3a6b3e9eaba5d.js></script></body></html><script type=text/javascript>(function (doc, win) {
+        var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+        var clientWidth = docEl.clientWidth;
+        if (!clientWidth) return;
+        // 默认设计图为640的情况下1rem=100px；根据自己需求修改
+        if(clientWidth>=750){
+        docEl.style.fontSize = '100px';
+        }else{
+        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        }
+        };
+         
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);</script>
